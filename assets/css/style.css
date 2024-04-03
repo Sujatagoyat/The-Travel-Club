@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    --fs-xxs: 10px;
+    --fs-xs: 14px;
+    --fs-s: 16px;
+    --fs-sm: 20px;
+    --fs-md: 24px;
+    --fs-lg: 28.33px;
+    --fs-xl: 32px;
+    --fs-2xl: 36px;
+    --fs-3xl: 48px;
+    --fs-4xl: 64px;
+    /* ===== font clr========= */
+    --fc-white:#FFFFFF;
+    --fc-navblue:#151640;
+    --fc-purple:#20204c;
+}
+/* ============================ clr ========================= */
+.color-white{
+    color: var(--fc-white);
+}
+/* ======================= font-size ============================== */
+.text-10{
+    font-size: var(--fs-xxs);
+}
+.text-14{
+    font-size: var(--fs-xs);
+}
+.text-16{
+    font-size: var(--fs-s);
+}
+.text-20{
+    font-size: var(--fs-sm);
+}
+.text-24{
+    font-size: var(--fs-md);
+}
+.text-28{
+    font-size: var(--fs-lg);
+}
+.text-32{
+    font-size: var(--fs-xl);
+}
+.text-36{
+    font-size: var(--fs-2xl);
+}
+.text-48{
+    font-size: var(--fs-3xl);
+}
+.text-64
+{
+    font-size: var(--fs-4xl);
+}
+/* ======================================= line height =================================== */
+.lh-35{
+    line-height: 35.7px;
+}
+.lh-24{
+    line-height: 24px;
+}
+.lh-75{
+    line-height: 75.2px;
+}
+.lh-15{
+    line-height: 15px;
+}
+.lh-21{
+    line-height: 21px;
+}
+.lh-28{
+    line-height: 28.2px;
+}
+.lh-27{
+    line-height: 27.3px;
+}
+.lh-42{
+    line-height: 42px;
+}
+.lh-30{
+    line-height: 30px;
+}
+.lh-37{
+    line-height: 37.6px;
+}
+.lh-36{
+    line-height: 36px;
+}
+.lh-32{
+    line-height: 32px;
+}
+.lh-25{
+    line-height: 25px;
+}
+/* ====================== font weight ============================= */
+.fw-300{
+    font-weight: 300;
+}
+.fw-400{
+    font-weight: 300;
+}
+.fw-500{
+    font-weight: 300;
+}
+.fw-600{
+    font-weight: 300;
+}
+/* ================= font family ================================= */
+.ff-racing{
+    font-family: 'Racing Sans One',sans-serif;
+}
+.ff-poppins{
+    font-family:' Poppins',sans-serif;
+}
+
+.my-container{
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bg-img{
+    background-image: url(../Images/png/hero-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.py-32{
+    padding-top: 32px;
+    padding-bottom: 31px;
+}
+.gap-32{
+    gap: 32px;
+}
+.nav-btn{
+    background: linear-gradient(90deg, #1219D2 0%, #4E52B1 100%);
+    border-radius: 60px;
+    border: transparent;
+    padding: 10px 32px;
+}
+.bg-clr{
+    background: var(--fc-purple);
+}
+
+
+
+
+
+
+
+
+@media (max-width:992px) {
+   
+    .overFlowHidden {
+        overflow: hidden;
+    }
+
+    ul.menulist.show {
+        right: 0;
+    }
+
+    .menuIcon {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* position: relative; */
+        z-index: 5;
+        transition: all 300ms linear;
+        top: 31px;
+        right: 12px;
+        position: fixed;
+    }
+
+    .menuIcon>span {
+        width: 100%;
+        height: 4px;
+        background: var(--fc-white);
+        position: relative;
+        z-index: 3;
+        transition: all 300ms linear;
+    }
+    .menulist{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background: var(--fc-navblue);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    .cross span:nth-child(1) {
+        transform: rotate(56deg) translateY(25px);
+        transition: all 300ms linear;
+        position: relative;
+        top: -7px;
+    }
+
+    .cross span:nth-child(2) {
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: 300ms;
+    }
+
+    .cross span:nth-child(3) {
+        transform: rotate(-50deg) translateY(-28px);
+        transition: all 300ms linear;
+        position: relative;
+        top: 0;
+    }
+}
