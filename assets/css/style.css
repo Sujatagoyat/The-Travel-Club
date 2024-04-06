@@ -23,7 +23,9 @@
     /* ===== font clr========= */
     --fc-white:#FFFFFF;
     --fc-navblue:#151640;
-    --fc-purple:#20204c;
+    --fc-purple:#1F204B;
+    --fc-bodyclr:#140D1B;
+    --fc-blueline:#1219D2;
 }
 /* ============================ clr ========================= */
 .color-white{
@@ -130,14 +132,14 @@
     margin-right: auto;
 }
 .bg-img{
-    background-image: url(../Images/png/hero-img.png);
+    background-image: url(../Images/png/hero-bg-img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.py-32{
-    padding-top: 32px;
-    padding-bottom: 31px;
+.py-25{
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .gap-32{
     gap: 32px;
@@ -148,8 +150,38 @@
     border: transparent;
     padding: 10px 32px;
 }
-.bg-clr{
+.bg-nav-clr{
     background: var(--fc-purple);
+}
+.pt-lg-140{
+    padding-top: 140px;
+}
+.bg-clr{
+    background-color: var(--fc-bodyclr);
+}
+.max-w-415{
+    max-width: 415px;
+}
+.blue_line::after{
+    content: "";
+    width: 100%;
+    height: 19px;
+    background: var(--fc-blueline);
+    border-radius: 21px;
+    position: absolute;
+    left: 0;
+    bottom: 11px;
+    z-index: -1;
+}
+/* ==================================== about us ============================================== */
+.btn-style{
+    background: linear-gradient(90deg, #1219D2 0%, #4E52B1 100%);
+    padding: 14px 34px;
+    border: transparent;
+    border-radius: 60px;
+}
+.pb-lg-40{
+    padding-bottom: 40px;
 }
 
 
@@ -221,5 +253,10 @@
         transition: all 300ms linear;
         position: relative;
         top: 0;
+    }
+}
+@media (min-width:992px) {
+    .max-w-509{
+        max-width: 509px;
     }
 }
