@@ -12,13 +12,13 @@
 :root {
     --fs-xxs: 10px;
     --fs-xs: 14px;
-    --fs-s: 16px;
+    --fs-s: 12px;
     --fs-sm: 20px;
     --fs-md: 24px;
     --fs-lg: 28.33px;
     --fs-xl: 32px;
     --fs-2xl: 36px;
-    --fs-3xl: 48px;
+    --fs-3xl: 38px;
     --fs-4xl:40px;
     /* ===== font clr========= */
     --fc-white:#FFFFFF;
@@ -267,12 +267,16 @@
 /* ==================================== about us ============================================== */
 .btn-style{
     background: linear-gradient(90deg, #1219D2 0%, #4E52B1 100%);
-    padding: 14px 34px;
+    padding: 10px 24px;
     border: transparent;
     border-radius: 60px;
 }
-.pb-lg-40{
-    padding-bottom: 40px;
+.pb-20{
+    padding-bottom: 20px;
+}
+
+.pt-20{
+    padding-top: 20px;
 }
 
 
@@ -346,13 +350,24 @@
         position: relative;
         top: 0;
     }
+    .flex_wrap{
+        flex-wrap: wrap;
+    }
 }
 @media (min-width:576px) {
     :root{
     --fs-4xl:50px;
+    --fs-3xl: 48px;
+    --fs-s: 16px;
     }
     .max-w-415{
         max-width: 327px;
+    }
+    .btn-style{
+        background: linear-gradient(90deg, #1219D2 0%, #4E52B1 100%);
+        padding: 14px 34px;
+        border: transparent;
+        border-radius: 60px;
     }
 }
 @media (min-width:768px) {
@@ -404,5 +419,11 @@
     }
     .pb-lg-60{
         padding-bottom: 60px;
+    }
+    .pt-lg-140{
+        padding-top: 140px;
+    }
+    .pb-lg-40{
+        padding-bottom: 40px;
     }
 }
