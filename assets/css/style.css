@@ -33,6 +33,8 @@
     --fc-grey: #8999A3;
     --fc-blue: #171360;
     --fc-offwhite:#E9EBED;
+    --fc-fblack:#010101;
+    --fc-cream:#AFAFAF;
 }
 
 /* ============================ clr ========================= */
@@ -42,6 +44,9 @@
 
 .color-grey {
     color: var(--fc-grey);
+}
+.color-cream{
+    color: var(--fc-cream);
 }
 
 /* ======================= font-size ============================== */
@@ -692,6 +697,19 @@ input::placeholder {
 /* .accordion-body {
     padding: 0 30px 20px 30px !important;
 } */
+.max-w-749{
+    max-width: 749px !important;
+}
+/* ================================================ footer ======================================== */
+.footer-bg-clr{
+    background-color: var(--fc-fblack);
+}
+.pt-lg-40{
+    padding-top: 40px;
+}
+.pt-26{
+    padding-top: 26px;
+}
 
 @media (max-width:576px) {
     .layer-box {
@@ -992,5 +1010,8 @@ input::placeholder {
     }
     .max-w-561{
         max-width: 561px;
+    }
+    .max-w-260{
+        max-width: 260px;
     }
 }
