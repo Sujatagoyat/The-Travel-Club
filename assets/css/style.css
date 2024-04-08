@@ -605,6 +605,14 @@ input::placeholder {
 .gap-70 {
     gap: 70px;
 }
+.linear-gradient-toki{
+    background: linear-gradient(180deg, #140D1B 24.34%, rgba(20, 15, 34, 0) 93.95%);
+     /* max-width: 1440px; */
+     width: 100%;
+     max-height: 215px;
+     height: 100%;
+     z-index: 1;
+}
 
 @media (max-width:576px) {
     .layer-box {
