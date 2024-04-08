@@ -492,6 +492,13 @@ input::placeholder{
 .slick-next:before, .slick-prev:before {
     display: none !important;
 }
+.slider-ellipse{
+    top: -67px;
+    right: 0;
+}
+.max-w-372{
+    max-width: 372px;
+}
 
 
 
