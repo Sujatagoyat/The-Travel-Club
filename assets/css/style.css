@@ -30,11 +30,15 @@
     --fc-lightgrey: #767382;
     --fc-lightblue: #2B294B;
     --fc-layerclr:#7487AB;
+    --fc-grey:#8999A3;
 }
 
 /* ============================ clr ========================= */
 .color-white {
     color: var(--fc-white);
+}
+.color-grey{
+    color: var(--fc-grey);
 }
 
 /* ======================= font-size ============================== */
@@ -156,7 +160,13 @@
 .ff-poppins {
     font-family: ' Poppins', sans-serif;
 }
-
+@font-face {
+    font-family:'Sans Serif Collection',sans-serif ;
+    src: url(../font/SansSerifCollection/SansSerifCollection.ttf);
+}
+.ff-sans{
+    font-family:'Sans Serif Collection',sans-serif ;
+}
 .my-container {
     max-width: 1140px;
     padding-left: 12px;
@@ -421,12 +431,18 @@ input::placeholder{
     opacity: 0;
     transition: all 300ms linear;
 }
-/* ========================================= member deals ================================ */
+/* ========================================= member deals (slider) ================================ */
 .pt-lg-150{
     padding-top: 150px;
 }
 .pb-lg-60{
     padding-bottom: 60px;
+}
+.line_thro{
+    text-decoration: line-through !important;
+}
+.max-w-367{
+    max-width: 367px;
 }
 
 
