@@ -617,7 +617,7 @@ input::placeholder {
      width: 100%;
      max-height: 215px;
      height: 100%;
-     z-index: 1;
+     z-index: -1;
 }
 .gradient-2-toki{
     background: linear-gradient(180deg, #140D1B 24.34%, rgba(20, 15, 34, 0) 93.95%);
@@ -640,6 +640,16 @@ input::placeholder {
 .py-30{
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.team-ellipse{
+    position: absolute;
+    left: 0;
+    bottom: -582px;
+}
+.team-star{
+    position: absolute;
+    top: 70%;
+    left: 0;
 }
 /* ========================================== accordion =================================== */
 .accordion {
@@ -700,6 +710,16 @@ input::placeholder {
 .max-w-749{
     max-width: 749px !important;
 }
+.faq-ellipse{
+    position: absolute;
+    bottom: -133px;
+    right: 0;
+}
+.faq-star{
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+}
 /* ================================================ footer ======================================== */
 .footer-bg-clr{
     background-color: var(--fc-fblack);
@@ -709,6 +729,43 @@ input::placeholder {
 }
 .pt-26{
     padding-top: 26px;
+}
+.gap-lg-32{
+    gap: 32px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.f-link:hover{
+    color: var(--fc-white);
+}
+.bottom_line::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--fc-white);
+    border-radius: 21px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2px;
+    transition: all 200ms linear;
+    /* z-index: -1; */
+}
+.bottom_line:hover:after{
+    width: 100%;
+}
+.zoom:hover{
+    scale: 1.2;
+}
+.zoom{
+    transition: 0.2s linear;
+}
+.f-logo:hover{
+    color: var(--fc-blue);
+}
+.cursor-pointer{
+    cursor: pointer;
 }
 
 @media (max-width:576px) {
@@ -729,6 +786,9 @@ input::placeholder {
     }
     .justify_content_center{
         justify-content: center;
+    }
+    .pt-22{
+        padding-top: 22px;
     }
 
     /* .pr-20{
@@ -821,6 +881,9 @@ input::placeholder {
 
     .pb_20 {
         padding-bottom: 20px;
+    }
+    .pt_20{
+        padding-top: 20px;
     }
 
 }
@@ -1013,5 +1076,12 @@ input::placeholder {
     }
     .max-w-260{
         max-width: 260px;
+    }
+    .mb-lg-18{
+        margin-bottom: 18px;
+    }
+    .py-lg-160{
+        padding-top: 160px;
+        padding-bottom: 160px;
     }
 }
