@@ -252,10 +252,49 @@
 .drop_bg:hover{
     background: var(--fc-lightgrey);
 }
+/* input[type=checkbox]{
+    background:none !important;
+    outline: 1px solid var(--fc-white);
+} */
 /* .max-w-415 {
     max-width: 269px;
 } */
-
+.form-box label:before {
+    content: "";
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 0.6px solid var(--fc-white);
+    padding: 8.34px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.form-box input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+.form-box label {
+    position: relative;
+    cursor: pointer;
+}
+.form-box input:checked + label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    width: 5px;
+    height: 12px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
 
 
 .underline::after {
