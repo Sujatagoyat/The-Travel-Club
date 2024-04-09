@@ -239,7 +239,19 @@
 .nav_line:hover:after{
     width: 100%;
 }
-
+.drop-menu{
+    opacity: 0;
+}
+.drop-down:hover .drop-menu{
+    opacity: 1;
+    /* right: -133px; */
+    background: var(--fc-lightblue);
+    padding: 5px;
+    border-radius: 5px;
+}
+.drop_bg:hover{
+    background: var(--fc-lightgrey);
+}
 /* .max-w-415 {
     max-width: 269px;
 } */
@@ -312,7 +324,7 @@
 
 .search-btn {
     background: linear-gradient(90deg, #1219D2 0%, #4E52B1 100%);
-    padding: 14px 32px;
+    padding: 10px 32px;
     border-radius: 60px;
     border: 2px solid transparent;
 }
@@ -558,6 +570,7 @@ input::placeholder {
     margin: 7px;
     border-radius: 21px;
     transition: all 300ms linear;
+    z-index: 2;
 }
 .slick-dots li.slick-active{
     background: var(--fc-blueline);
@@ -585,8 +598,13 @@ input::placeholder {
 
 /* .slick-dots li button:before {
     color: var(--fc-white) !important;
-} */
+}
+ */
 
+
+.slick-next, .slick-prev {  
+    display: none !important;  
+}
 .slick-dots {
     bottom: -66px !important;
 }
@@ -826,6 +844,9 @@ input::placeholder {
     right: 2%;
     bottom: 2%;
 }
+.opacity_80{
+    opacity: 80% !important;
+}
 
 /* ================================================ footer ======================================== */
 .footer-bg-clr {
@@ -904,7 +925,7 @@ input::placeholder {
     opacity: 0;
     visibility: hidden;
     /* transition: all 300ms linear; */
-    z-index: 3;
+    z-index: 2;
     /* animation: move 1.3s infinite linear; */
     /* box-shadow: 0px 3px 15px 3px var(--fc-white); */
 }
@@ -928,6 +949,9 @@ svg path:hover{
         left: 4px;
         opacity: 0.8;
         transition: all 200ms linear;
+    }
+    :root{
+        --fs-lg: 18px;
     }
 
     .flex_wrap {
@@ -972,7 +996,7 @@ svg path:hover{
 @media (max-width:992px) {
 
     .overFlowHidden {
-        overflow: hidden;
+        overflow: hidden !important;
     }
 
     ul.menulist.show {
@@ -1005,7 +1029,7 @@ svg path:hover{
     .menulist {
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background: var(--fc-navblue);
         position: fixed;
         top: 0;
@@ -1016,7 +1040,7 @@ svg path:hover{
     }
 
     .cross span:nth-child(1) {
-        transform: rotate(56deg) translateY(25px);
+        transform: rotate(56deg) translateY(0px);
         transition: all 300ms linear;
         position: relative;
         top: -7px;
@@ -1029,10 +1053,10 @@ svg path:hover{
     }
 
     .cross span:nth-child(3) {
-        transform: rotate(-50deg) translateY(-28px);
+        transform: rotate(129deg) translateY(0px);
         transition: all 300ms linear;
         position: relative;
-        top: 0;
+        top: -33px;
     }
 
     .flex_wrap {
@@ -1113,9 +1137,7 @@ svg path:hover{
         gap: 112px;
     }
 
-    .pt-lg-160 {
-        padding-top: 160px;
-    }
+  
    .max-w-478{
         max-width: 478px;
     }
@@ -1283,6 +1305,9 @@ svg path:hover{
     .py-lg-160 {
         padding-top: 160px;
         padding-bottom: 160px;
+    }
+   .pt-lg-160 {
+        padding-top: 160px;
     }
     /* /* .max-w-889{
         max-width: 889px;

@@ -26,7 +26,7 @@ $('.responsive').slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1
       }
     },
@@ -83,7 +83,7 @@ const topBtn = document.querySelector(".topBtn");
 const show = document.querySelector(".show"); 
 
 window.addEventListener("scroll", function () {
-    if (window.scrollY >100) {
+    if (window.scrollY >500) {
         topBtn.classList.add("show");
     } else {
         topBtn.classList.remove("show");
