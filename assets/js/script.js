@@ -80,15 +80,66 @@ $('.slider').slick({
 });
 
 const topBtn = document.querySelector(".topBtn");
-const show = document.querySelector(".show"); 
+const show = document.querySelector(".show");
+
 
 window.addEventListener("scroll", function () {
-    if (window.scrollY >500) {
-        topBtn.classList.add("show");
-    } else {
-        topBtn.classList.remove("show");
-    }
+  if (window.scrollY > 500) {
+    topBtn.classList.add("show");
+  } else {
+    topBtn.classList.remove("show");
+  }
 })
 topBtn.addEventListener("click", function () {
-    document.documentElement.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 })
+
+
+const month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+const checkindate = document.getElementById("checkindate")
+const toparrow = document.querySelector(".toparrow")
+const bottomarrow = document.querySelector(".bottomarrow")
+
+const currentdate = new Date(2024, 6, 29);
+function updatedisplay() {
+  const newdate = currentdate.getDate();
+  const months = currentdate.getMonth();
+  checkindate.innerHTML = `${month[months]} ${newdate} ` 
+}
+updatedisplay()
+
+toparrow.addEventListener("click", function () {
+  currentdate.setDate(currentdate.getDate() + 1);
+  updatedisplay()
+});
+bottomarrow.addEventListener("click", function(){
+  currentdate.setDate(currentdate.getDate() - 1);
+  updatedisplay()
+})
+
+const monthname = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+const datedisplay = document.getElementById("datedisplay")
+const uparrow = document.querySelector(".uparrow")
+const downarrow = document.querySelector(".downarrow")
+
+const latestdate = new Date(2024, 10, 29);
+function showndisplay() {
+  const today = latestdate.getDate();
+  const month = latestdate.getMonth();
+  datedisplay.innerHTML = `${monthname[month]} ${today} ` 
+}
+showndisplay()
+
+uparrow.addEventListener("click", function () {
+  latestdate.setDate(latestdate.getDate() + 1);
+  showndisplay()
+});
+downarrow.addEventListener("click", function () {
+  latestdate.setDate(latestdate.getDate() - 1);
+  showndisplay()
+});
+//  console.log(currentdate);
+
+
+
+
