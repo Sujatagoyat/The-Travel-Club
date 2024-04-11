@@ -139,6 +139,12 @@ downarrow.addEventListener("click", function () {
   showndisplay()
 });
 //  console.log(currentdate);
+$(document).ready(function () {
+  $('.drop-down').on('click', function () {
+      $('.drop-down').toggle('active');
+      // $('.drop-down').addClass('active');
+  })
+});
 
 
 
