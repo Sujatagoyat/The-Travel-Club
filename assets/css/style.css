@@ -294,7 +294,36 @@
     border: solid #ffffff;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
-} */ */
+} */ 
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+    padding: 11px;
+    border: 0.6px solid var(--fc-white);
+    /* border-radius: 0.5rem; */
+  }
+  /* input[type="checkbox"]::before {
+ 
+  }  */
+  input[type="checkbox"]:checked::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 5px;
+    height: 12px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  
+
 .underline::after {
     content: "";
     width: 100%;
