@@ -84,7 +84,7 @@ const show = document.querySelector(".show");
 
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 500) {
+  if (window.scrollY > 1000) {
     topBtn.classList.add("show");
   } else {
     topBtn.classList.remove("show");
@@ -139,12 +139,7 @@ downarrow.addEventListener("click", function () {
   showndisplay()
 });
 //  console.log(currentdate);
-$(document).ready(function () {
-  $('.drop-down').on('click', function () {
-      $('.drop-down').toggle('active');
-      // $('.drop-down').addClass('active');
-  })
-});
+
 
 
 
