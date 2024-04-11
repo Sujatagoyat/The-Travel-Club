@@ -245,11 +245,12 @@
 
 .drop-menu {
     opacity: 0;
+    right: 3px;
 }
 
 .drop-down:hover .drop-menu {
     opacity: 1;
-    /* right: -133px; */
+    right: 3px;
     background: var(--fc-lightblue);
     padding: 5px;
     border-radius: 5px;
