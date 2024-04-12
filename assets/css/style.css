@@ -456,7 +456,9 @@ input[type="checkbox"]:checked::before {
 .pt-40 {
     padding-top: 40px;
 }
-
+.pt-30{
+    padding-top: 30px;
+}
 .pb-30 {
     padding-bottom: 30px;
 }
@@ -738,6 +740,7 @@ border-radius: 13px !important;
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 
 .team-ellipse {
     position: absolute;
@@ -1274,8 +1277,7 @@ svg path:hover {
         margin-bottom: 18px;
     }
 
-    .py-lg-160 {
-        padding-top: 160px;
+    .pb-lg-160 {
         padding-bottom: 160px;
     }
 
