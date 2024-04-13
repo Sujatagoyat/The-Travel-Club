@@ -1003,6 +1003,11 @@ svg path:hover {
         transition: all 300ms linear;
     }
 
+    /* .menuIcon.show>span {
+        top: -10px !important;
+        position: relative !important;
+    } */
+
     .menulist {
         flex-direction: column;
         width: 100%;
@@ -1021,7 +1026,7 @@ svg path:hover {
         transform: rotate(56deg) translateY(0px);
         transition: all 300ms linear;
         position: relative;
-        top: -7px;
+        top: 8px;
     }
 
     .cross span:nth-child(2) {
@@ -1034,7 +1039,7 @@ svg path:hover {
         transform: rotate(129deg) translateY(0px);
         transition: all 300ms linear;
         position: relative;
-        top: -33px;
+        top: -18px;
     }
 
     .flex_wrap {
