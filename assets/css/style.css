@@ -242,10 +242,13 @@
 .nav_line:hover:after {
     width: 100%;
 }
+.nav-tabs{
+    --bs-nav-tabs-border-width:0 !important;
+}
 .drop-menu.dropshow {
     opacity: 1;
     right: 3px;
-    background: var(--fc-lightblue);
+    background: var(--fc-bodyclr);
     padding: 10px;
     border-radius: 5px;
     z-index: 1;
@@ -270,7 +273,7 @@
     border-radius: 5px;
 } */
 .drop_bg:hover {
-    background: var(--fc-lightgrey);
+    background: var(--fc-lightblue);
 }
 input[type="checkbox"] {
     appearance: none;

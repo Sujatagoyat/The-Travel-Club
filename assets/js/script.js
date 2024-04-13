@@ -62,6 +62,8 @@ $('.slider').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 3,
+  centerMode: true,
+  variableWidth: true,
   slidesToScroll: 1,
   responsive: [
     {
@@ -122,7 +124,7 @@ const datedisplay = document.getElementById("datedisplay")
 const uparrow = document.querySelector(".uparrow")
 const downarrow = document.querySelector(".downarrow")
 
-const latestdate = new Date(2024, 10, 29);
+const latestdate = new Date(2024, 6 , 29);
 function showndisplay() {
   const today = latestdate.getDate();
   const month = latestdate.getMonth();
