@@ -140,6 +140,11 @@ downarrow.addEventListener("click", function () {
 });
 //  console.log(currentdate);
 
+function myFunction() {
+  document.querySelector(".drop-menu").classList.toggle("dropshow");
+}
+
+
 
 
 
