@@ -17,7 +17,7 @@
     --fs-sm: 20px;
     --fs-md: 24px;
     --fs-lg: 28.33px;
-    --fs-xl: 32px;
+    --fs-xl: 18px;
     --fs-2xl: 36px;
     --fs-3xl: 30px;
     --fs-4xl: 40px;
@@ -323,8 +323,8 @@ input[type="checkbox"]:checked::before {
     padding: 0px 10px;
 }
 
-.gap-30 {
-    gap: 30px;
+.gap-67 {
+    gap: 67px;
 }
 
 .search-btn {
@@ -661,16 +661,16 @@ border-radius: 13px !important;
     gap: 30px;
 }
 
-.gap-25 {
-    gap: 25px;
+.gap-70 {
+    gap: 70px;
+}
+
+.gap-18 {
+    gap: 18px;
 }
 
 .gap-10 {
-    gap: 10px;
-}
-
-.gap-10 {
-    gap: 10px;
+    gap: 15px;
 }
 
 .mt-lg-43 {
@@ -694,7 +694,7 @@ border-radius: 13px !important;
 }
 
 .gap-70 {
-    gap: 70px;
+    gap: 59px;
 }
 
 .linear-gradient-toki {
@@ -1058,7 +1058,8 @@ svg path:hover {
 @media (min-width:576px) {
     :root {
         --fs-4xl: 50px;
-        --fs-3xl: 48px;
+        --fs-3xl: 48px;   
+        --fs-xl: 32px;
         --fs-s: 16px;
     }
 
@@ -1105,12 +1106,12 @@ svg path:hover {
         gap: 40px;
     }
 
-    .gap-lg-28 {
-        gap: 28px;
+    .gap-lg-18 {
+        gap: 18px;
     }
 
-    .gap-lg-112 {
-        gap: 112px;
+    .gap-lg-122 {
+        gap: 122px;
     }
 
 
@@ -1284,5 +1285,20 @@ svg path:hover {
 
     .pt-lg-160 {
         padding-top: 160px;
+    }
+}
+@media (min-width:1024px) {
+    .gap-xl-28{
+        gap: 28px;
+    }
+    .toki-box {
+        background: var(--fc-blue);
+        max-width: 582px;
+        width: 100%;
+        height: 100%;
+        min-height: 480px;
+        padding: 29px 30px;
+        border-radius: 20.69px;
+        opacity: 0.7;
     }
 }
