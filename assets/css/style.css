@@ -965,6 +965,9 @@ svg path:hover {
     .justify_content_center {
         justify-content: center;
     }
+    .text_center{
+        text-align: center;
+    }
 
     /* .pt-22 {
         padding-top: 22px;
