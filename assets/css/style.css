@@ -869,6 +869,9 @@ border-radius: 13px !important;
 .f-link:hover {
     color: var(--fc-white);
 }
+.bottom_line{
+    position: relative;
+}
 
 .bottom_line::after {
     content: "";
@@ -881,10 +884,11 @@ border-radius: 13px !important;
     transform: translateX(-50%);
     bottom: -2px;
     transition: all 200ms linear;
+    /* position: relative; */
     /* z-index: -1; */
 }
 
-.bottom_line:hover:after {
+.bottom_line.active::after {
     width: 100%;
 }
 

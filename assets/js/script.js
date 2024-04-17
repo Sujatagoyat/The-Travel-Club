@@ -145,7 +145,12 @@ downarrow.addEventListener("click", function () {
 function myFunction() {
   document.querySelector(".drop-menu").classList.toggle("dropshow");
 }
-
+$(document).ready(function () {
+  $('.bottom_line').on('click', function () {
+      $('.bottom_line').removeClass('active');
+      $(this).addClass('active');
+  })
+});
 
 
 
