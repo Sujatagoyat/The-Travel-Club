@@ -13,7 +13,7 @@
 :root {
     --fs-xxs: 10px;
     --fs-xs: 14px;
-    --fs-s: 14px;
+    --fs-s: 12px;
     --fs-sm: 20px;
     --fs-md: 24px;
     --fs-lg: 28.33px;
@@ -492,7 +492,7 @@ input::placeholder {
 
 .layer-box {
     max-width: 253px;
-    padding: 10px 28px;
+    padding: 10px 10px;
     border-radius: 42px;
     background: var(--fc-layerclr);
     /* filter: blur(8px); */
@@ -687,7 +687,7 @@ border-radius: 13px !important;
 }
 
 .gap-10 {
-    gap: 15px;
+    gap: 9px;
 }
 
 .mt-lg-43 {
@@ -944,7 +944,7 @@ svg path:hover {
 @media (max-width:576px) {
     .layer-box {
         max-width: 253px;
-        padding: 5px 10px;
+        padding: 5px 5px;
         border-radius: 42px;
         background: var(--fc-layerclr);
         /* filter: blur(8px); */
@@ -1147,6 +1147,17 @@ svg path:hover {
 
     .max-w-478 {
         max-width: 337px;
+    }
+    .layer-box {
+        max-width: 253px;
+        padding: 10px 28px;
+        border-radius: 42px;
+        background: var(--fc-layerclr);
+        /* filter: blur(8px); */
+        top: 12px;
+        left: 12px;
+        opacity: 0.8;
+        transition: all 200ms linear;
     }
 }
 
